@@ -52,10 +52,8 @@ sudo ./scripts/ssl-setup.sh xyz.com your@email.com
 ```
 
 **4. Update Configuration**
-```bash
-# Edit nginx/nginx.conf - replace domain name
-sed -i 's/xtts.kubegrind.com/xyz.com/g' nginx/nginx.conf
-```
+
+The nginx.conf is pre-configured for xyz.com domain. If using a different domain, edit nginx/nginx.conf and update the server_name and SSL certificate paths accordingly.
 
 **5. Deploy**
 ```bash
