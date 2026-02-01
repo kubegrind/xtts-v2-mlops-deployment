@@ -1,0 +1,44 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+*.egg-info/
+dist/
+build/
+
+# Docker
+.dockerignore
+
+# Logs
+*.log
+logs/
+
+# Audio files
+*.wav
+*.mp3
+
+# Environment
+.env
+.env.local
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Certificates (don't commit private keys)
+*.pem
+*.key
+*.crt
+
+# Model cache
+model-cache/
