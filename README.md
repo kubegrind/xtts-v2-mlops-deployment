@@ -4,25 +4,25 @@ Production-ready deployment of Coqui XTTS-v2 voice cloning model on GPU infrastr
 
 **Live Demo:** `https://xyz.com`
 
-## 🎯 Overview
+## Overview
 
 Complete MLOps deployment pipeline for XTTS-v2 (Text-to-Speech with Voice Cloning) on cloud GPU infrastructure. Supports AWS, Azure, and GCP with GPU acceleration, containerization, and SSL/TLS security.
 
-## 🏗️ Architecture
+## Architecture
 ```
 Client → NGINX (HTTPS:443) → FastAPI (8000) → XTTS-v2 Model (GPU)
 ```
 
-## ✨ Features
+## Features
 
-- ✅ GPU Acceleration (CUDA 12.1)
-- ✅ Docker + NVIDIA Container Toolkit
-- ✅ HTTPS with Let's Encrypt SSL
-- ✅ Auto-restart with systemd
-- ✅ RESTful API endpoints
-- ✅ Health monitoring
+- GPU Acceleration (CUDA 12.1)
+- Docker + NVIDIA Container Toolkit
+- HTTPS with Let's Encrypt SSL
+- Auto-restart with systemd
+- RESTful API endpoints
+- Health monitoring
 
-## 🚀 Quick Start
+## Quick Start
 
 ### Prerequisites
 
@@ -68,7 +68,7 @@ docker compose up -d
 curl https://xyz.com/health
 ```
 
-## 📡 API Endpoints
+## API Endpoints
 
 ### Health Check
 ```bash
@@ -98,7 +98,7 @@ Parameters:
 
 **Response:** Audio file (WAV)
 
-## 🔧 Usage Examples
+## Usage Examples
 
 ### cURL
 ```bash
@@ -138,7 +138,7 @@ const response = await axios.post('https://xyz.com/tts', form, {
 fs.writeFileSync('output.wav', response.data);
 ```
 
-## 📊 Technical Stack
+## Technical Stack
 
 | Component | Technology |
 |-----------|------------|
@@ -151,7 +151,7 @@ fs.writeFileSync('output.wav', response.data);
 | **API** | FastAPI 0.104.1 |
 | **Web Server** | NGINX with SSL |
 
-## 🛠️ Management
+## Management
 
 **View Logs:**
 ```bash
@@ -173,13 +173,13 @@ docker compose down
 nvidia-smi
 ```
 
-## 📈 Performance
+## Performance
 
 - **First request:** ~10-15s (model warm-up)
 - **Subsequent requests:** ~3-8s
 - **Recommended load:** 1-3 concurrent requests
 
-## 🐛 Troubleshooting
+## Troubleshooting
 
 **Service not responding:**
 ```bash
@@ -199,21 +199,19 @@ sudo certbot certificates
 sudo certbot renew
 ```
 
-## 📄 License
+## License
 
 MIT License - see [LICENSE](LICENSE) file
 
-## 🤝 Contributing
+## Contributing
 
 Contributions welcome! Please open an issue or submit a pull request.
 
-## 📧 Contact
+## Contact
 
-- **Portfolio:** kubegrind.com
-- **Email:** your@email.com
-- **GitHub:** [@yourusername](https://github.com/yourusername)
+Portfolio: kubegrind.com
 
-## 🙏 Acknowledgments
+## Acknowledgments
 
 - [Coqui TTS](https://github.com/coqui-ai/TTS) for the XTTS-v2 model
 - NVIDIA for GPU acceleration tools
